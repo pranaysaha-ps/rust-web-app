@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  rust-web-app:
+    image: rust-web-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000
